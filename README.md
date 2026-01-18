@@ -7,11 +7,12 @@ cd auth-template
 rm -rf .git
 ```
 
-2. Create a .env file with the following 2 values:
+2. Create a .env file with the following 2 values of your database connection:
 ```
-MONGODB_URI=mongodb+srv://omar1:1234@cluster0.g3jfckx.mongodb.net/libraryDB?retryWrites=true&w=majority&appName=Cluster0
+MONGODB_URI=mongodb+srv://<username>:<password>@cluster0.jbfjdbbdkkj.mongodb.net/libraryDB?retryWrites=true&w=majority&appName=Cluster0
 SESSION_SECRET=lcnkdnkldncklndlkcdndkl
 ```
+
 
 3. run:
 ```bash
