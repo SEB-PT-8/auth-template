@@ -5,6 +5,7 @@
 git clone https://github.com/SEB-PT-8/auth-template.git
 cd auth-template
 rm -rf .git
+rm README.md
 ```
 
 2. Create a .env file with the following 2 values of your database connection:
