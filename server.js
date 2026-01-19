@@ -9,12 +9,12 @@ const indexController = require("./controllers/index.routes.js");
 const session = require('express-session');
 const isSignedIn = require("./middleware/is-signed-in.js");
 const passUserToView = require("./middleware/pass-user-to-view.js");
-
+const methodOverride = require('method-override')
 
 app.use(express.static('public')) // my app will serve all static files from public folder
 app.use(express.urlencoded({ extended: false }));
 app.use(morgan('dev'))
-app.use(morgan('dev'));
+app.use(methodOverride('_method'))
 // new
 app.use(
   session({
